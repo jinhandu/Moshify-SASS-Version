@@ -1,0 +1,16 @@
+// Links Mobile
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  color: $colorAccent;
+  font-size: 2rem;
+  font-weight: bold;
+  &::after {
+    content: "-->";
+    transition: margin-left 0.15s ease-in-out;
+  }
+  &:hover::after {
+    margin-left: 7px;
+  }
+}

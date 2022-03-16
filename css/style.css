@@ -62,4 +62,30 @@ p {
     font-size: 2.4rem;
   }
 }
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: #ff3400;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  -webkit-transition: margin-left 0.15s ease-in-out;
+  transition: margin-left 0.15s ease-in-out;
+}
+
+.link-arrow:hover::after {
+  margin-left: 7px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
