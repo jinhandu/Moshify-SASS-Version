@@ -49,6 +49,9 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
   p {
     font-size: 1.8rem;
   }
@@ -117,6 +120,32 @@ a {
   }
   .badge--small {
     font-size: 1.2rem;
+  }
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: #1b0760;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 2rem;
+}
+
+.list--tick .list__item {
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
