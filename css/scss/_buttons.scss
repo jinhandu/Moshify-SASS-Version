@@ -1,0 +1,59 @@
+@mixin btn-hover-effect($background-color-variable) {
+  &:hover {
+    background-color: darken($color: $background-color-variable, $amount: 8%);
+  }
+}
+
+.btn {
+  margin: 1rem 0;
+  border-radius: 5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 2rem 3rem;
+  text-align: center;
+  white-space: nowrap;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.btn--accent {
+  @include btn-hover-effect($colorAccent);
+  background-color: $colorAccent;
+  color: white;
+}
+.btn--primary {
+  @include btn-hover-effect($colorPrimary);
+  background-color: $colorPrimary;
+  color: white;
+}
+.btn--secondary {
+  @include btn-hover-effect($colorSecondary);
+  background-color: $colorSecondary;
+  color: white;
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 2.5px solid $colorHeadings;
+  color: $colorHeadings;
+  &:hover {
+    background-color: $colorHeadings;
+    color: white;
+  }
+}
+
+.btn--fit-content {
+  width: auto;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
