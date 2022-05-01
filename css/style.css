@@ -247,4 +247,35 @@ a {
     font-size: 1.5rem;
   }
 }
+
+.input {
+  -webkit-box-shadow: 0 0 10px #dadada;
+          box-shadow: 0 0 10px #dadada;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  color: #1b0760;
+  padding: 1.5rem 3.5rem;
+  outline: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  justify-self: center;
+  font-size: 1.8rem;
+}
+
+.input::-webkit-input-placeholder {
+  color: #cdcbd7;
+}
+
+.input:-ms-input-placeholder {
+  color: #cdcbd7;
+}
+
+.input::-ms-input-placeholder {
+  color: #cdcbd7;
+}
+
+.input::placeholder {
+  color: #cdcbd7;
+}
 /*# sourceMappingURL=style.css.map */

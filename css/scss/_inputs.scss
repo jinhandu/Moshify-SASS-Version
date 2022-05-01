@@ -1,0 +1,14 @@
+.input {
+  box-shadow: 0 0 10px #dadada;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  color: $colorHeadings;
+  padding: 1.5rem 3.5rem;
+  outline: none;
+  display: inline-flex;
+  justify-self: center;
+  font-size: 1.8rem;
+  &::placeholder {
+    color: #cdcbd7;
+  }
+}
