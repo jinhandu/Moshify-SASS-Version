@@ -330,4 +330,35 @@ a {
     font-size: 1.8rem;
   }
 }
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform ease-in-out 0.2s;
+  transition: -webkit-transform ease-in-out 0.2s;
+  transition: transform ease-in-out 0.2s;
+  transition: transform ease-in-out 0.2s, -webkit-transform ease-in-out 0.2s;
+  -webkit-box-shadow: 0 0 20px 10px #f3f3f3;
+          box-shadow: 0 0 20px 10px #f3f3f3;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card--primary .card__header {
+  background-color: #2584ff;
+  color: white;
+}
+
+.card--secondary .card__header {
+  background-color: #00d9ff;
+  color: white;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
 /*# sourceMappingURL=style.css.map */

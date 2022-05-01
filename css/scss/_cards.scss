@@ -1,0 +1,25 @@
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform ease-in-out 0.2s;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.card--primary {
+  .card__header {
+    background-color: $colorPrimary;
+    color: white;
+  }
+}
+.card--secondary {
+  .card__header {
+    background-color: $colorSecondary;
+    color: white;
+  }
+}
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
