@@ -362,6 +362,19 @@ a {
   padding: 2rem 3rem;
 }
 
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header:first-child::before {
+  content: url(../../images/popular.svg);
+  display: block;
+  width: 40px;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+}
+
 .plan__name {
   color: white;
   font-weight: normal;
