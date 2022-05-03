@@ -420,4 +420,25 @@ a {
     font-size: 1.7rem;
   }
 }
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.media__image {
+  padding: 2rem;
+}
+
+.media__title {
+  margin-top: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.media__description {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
 /*# sourceMappingURL=style.css.map */

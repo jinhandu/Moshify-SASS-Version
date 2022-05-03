@@ -1,0 +1,17 @@
+.media {
+  display: flex;
+}
+.media__image {
+  padding: 2rem;
+}
+.media__title {
+  //   color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.media__description {
+  margin-top: 1rem;
+  //   color: #7b858b;
+  font-size: 2rem;
+}
