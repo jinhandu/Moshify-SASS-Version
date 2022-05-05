@@ -1,0 +1,36 @@
+.testimonial {
+  &:hover {
+    transform: none;
+  }
+}
+.testimonial__header {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  position: relative;
+  @media screen and (min-width: $mediaBreakPoiontMedium) {
+    margin-bottom: 3rem;
+  }
+}
+
+.testimonial__img {
+  width: 100%;
+}
+.testimonial__icon-container {
+  .icon {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+  }
+  background-color: #ff3400;
+  position: absolute;
+  top: 30px;
+  right: -32px;
+}
+.testimonial__quote {
+  padding-top: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0;
+  margin-bottom: 4rem;
+}
