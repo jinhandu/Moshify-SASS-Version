@@ -222,6 +222,11 @@ a {
   background-color: #00b6d6;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .btn--outline {
   background-color: transparent;
   border: 2.5px solid #1b0760;
@@ -557,5 +562,51 @@ a {
   padding-right: 2rem;
   margin: 0;
   margin-bottom: 4rem;
+}
+
+.callout {
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
+  }
+}
+
+.callout--primary {
+  background-color: #2584ff;
+}
+
+.callout__content {
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .callout__content {
+    padding-bottom: 0;
+    text-align: center;
+  }
+}
+
+.callout__description {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.callout__title {
+  margin-top: 0;
+  color: white;
+}
+
+.callout__btn {
+  margin-left: 2rem;
+  margin-right: 5rem;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */

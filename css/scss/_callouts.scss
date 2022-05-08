@@ -1,0 +1,33 @@
+.callout {
+  border-radius: 5px;
+  .grid--1x2 {
+    @media screen and (min-width: $mediaBreakPoiontMedium) {
+      grid-template-columns: 1fr auto;
+    }
+  }
+}
+.callout--primary {
+  background-color: $colorPrimary;
+}
+.callout__content {
+  padding: 2rem;
+  @media screen and (max-width: $mediaBreakPoiontMedium) {
+    padding-bottom: 0;
+    text-align: center;
+  }
+}
+.callout__description {
+  color: #fff;
+  font-size: 2.2rem;
+}
+.callout__title {
+  margin-top: 0;
+  color: white;
+}
+
+.callout__btn {
+  margin-left: 2rem;
+  margin-right: 5rem;
+  justify-self: start;
+  align-self: center;
+}
