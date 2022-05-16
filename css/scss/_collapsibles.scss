@@ -1,0 +1,48 @@
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible__heading {
+  font-size: 3rem;
+}
+.collapsible__icon {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s, opacity 0.3s;
+}
+
+.collapsible--expanded {
+  .collapsible__icon {
+    transform: rotate(0);
+  }
+  .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
+  }
+}
+//Skins
+.collapsible--dark-gray {
+  background-color: $colorDarkGrayBg;
+  border-bottom: 1px solid #393939;
+  .collapsible__heading {
+    color: white;
+  }
+  .collapsible__content {
+    color: #777777;
+    font-size: 2rem;
+    li {
+      cursor: pointer;
+      display: block;
+      width: fit-content;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}

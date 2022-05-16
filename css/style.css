@@ -19,6 +19,8 @@
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -165,6 +167,10 @@ a {
   fill: #2584ff;
 }
 
+.icon--white {
+  fill: #fff;
+}
+
 .icon-container {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -179,6 +185,10 @@ a {
   border-radius: 100%;
   width: 64px;
   height: 64px;
+}
+
+.icon-container--daker {
+  background-color: #393939;
 }
 
 .btn {
@@ -608,5 +618,73 @@ a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.collapsible__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.collapsible__heading {
+  font-size: 3rem;
+}
+
+.collapsible__icon {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s, opacity 0.3s;
+  transition: max-height 0.3s, opacity 0.3s;
+}
+
+.collapsible--expanded .collapsible__icon {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.collapsible--dark-gray {
+  background-color: #232323;
+  border-bottom: 1px solid #393939;
+}
+
+.collapsible--dark-gray .collapsible__heading {
+  color: white;
+}
+
+.collapsible--dark-gray .collapsible__content {
+  color: #777777;
+  font-size: 2rem;
+}
+
+.collapsible--dark-gray .collapsible__content li {
+  cursor: pointer;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.collapsible--dark-gray .collapsible__content li:hover {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
