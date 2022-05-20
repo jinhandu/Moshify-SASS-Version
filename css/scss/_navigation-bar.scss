@@ -1,4 +1,8 @@
-.navigation-bar {
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   .collapsible__content {
     @media screen and (min-width: $mediaBreakPoiontMedium) {
       //On PC
@@ -7,33 +11,31 @@
       opacity: 1;
     }
   }
-  .collapsible--expanded {
-    .navigation__toggler {
-      //Add click effect, when the toggler is expanded.
-      opacity: 1;
-      border-radius: 3px;
-      box-shadow: 0 0 0px 3px #666;
-    }
-  }
 }
 
-.navigation__collapsible {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.nav--grid-drive {
   @media screen and (max-width: $mediaBreakPoiontMedium) {
     display: grid;
     grid-template-columns: 1fr auto;
   }
 }
+.nav--trick-drive {
+  flex-wrap: wrap;
+  .nav__list {
+    @media screen and (max-width: $mediaBreakPoiontMedium) {
+      width: 100%;
+    }
+  }
+}
 
-.navigation__logo {
-  margin: 1rem;
+.nav__brand {
+  margin-top: 1rem;
+  margin-left: 1rem;
   width: 150px;
   height: auto;
 }
 
-.navigation__toggler {
+.nav__toggler {
   transform: rotate(0);
   opacity: 0.8;
   margin-right: 1rem;
@@ -42,9 +44,26 @@
     display: block;
   }
 }
-.navigation__menu {
+
+.nav.collapsible--expanded {
+  .nav__toggler {
+    //Add click effect, when the toggler is expanded.
+    opacity: 1;
+    border-radius: 3px;
+    box-shadow: 0 0 0px 3px #666;
+  }
+}
+
+.nav__list {
   //.list
+  display: inline-flex;
+  @media screen and (max-width: $mediaBreakPoiontMedium) {
+    //On Mobile
+    display: block;
+  }
   .list__item {
+    margin-left: 2.5rem;
+    margin-right: 1rem;
     opacity: 0.8;
     cursor: pointer;
     transition: opacity 0.3s;
@@ -53,18 +72,18 @@
     }
     @media screen and (max-width: $mediaBreakPoiontMedium) {
       //On Mobile
+      display: block;
       border-bottom: 1px solid $colorDividerLine;
       margin-top: 1rem;
       margin-left: 0.5rem;
       padding-left: 2rem;
       padding-bottom: 1rem;
-      display: block;
     }
   }
 }
 
 //skins
-.navigation-bar--dark {
+.nav--dark {
   background-color: black;
   .list__item {
     color: white;
