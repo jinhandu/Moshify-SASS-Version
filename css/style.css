@@ -38,7 +38,6 @@ h1,
 h2,
 h3 {
   color: #1b0760;
-  margin-bottom: 1rem;
 }
 
 h1 {
@@ -804,5 +803,110 @@ a {
   .nav--dark .list__item {
     font-size: 2rem;
   }
+}
+
+.block {
+  --padding--vertical: 6rem;
+  padding-top: 6rem;
+  padding-bottom: var(--padding--vertical);
+}
+
+.block h1,
+.block h2,
+.block h3 {
+  margin: 0;
+}
+
+.block .block__header {
+  text-align: center;
+}
+
+.block--dark {
+  color: #7b858b;
+  background-color: black;
+}
+
+.block--dark .block__heading {
+  color: white;
+}
+
+.block--stretched-left {
+  padding-bottom: calc(var(--padding--vertical) + 6rem);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.block--stretched-right {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 80%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 80%);
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.hero {
+  background-color: #000;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+}
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.hero__heading {
+  line-height: 1;
+  margin-bottom: 2rem;
+  font-size: 6rem;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__heading {
+    font-size: 8rem;
+  }
+}
+
+.hero__description {
+  color: #ccc;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero__btn {
+  margin-bottom: 8rem;
+}
+
+.hero__img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 80%;
+  margin-bottom: 8rem;
 }
 /*# sourceMappingURL=style.css.map */
