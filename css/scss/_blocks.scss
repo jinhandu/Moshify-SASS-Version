@@ -2,14 +2,6 @@
   --padding--vertical: 6rem;
   padding-top: 6rem;
   padding-bottom: var(--padding--vertical);
-  h1,
-  h2,
-  h3 {
-    margin: 0;
-  }
-  .block__header {
-    text-align: center;
-  }
 }
 .block--dark {
   color: #7b858b;
@@ -20,7 +12,7 @@
 }
 .block--stretched-left {
   padding-bottom: calc(var(--padding--vertical) + 6rem);
-  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
 }
 .block--stretched-right {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 80%);
