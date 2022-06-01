@@ -9,6 +9,22 @@
         >GET STARTED</a
       >
     </div>
-    <img class="hero__img" src="./images/banner.png" alt="" />
+    <picture>
+      <source
+        type="image/webp"
+        srcset="
+          ./images/optimized/banner.webp    1x,
+          ./images/optimized/banner@2x.webp 2x
+        "
+      />
+      <source
+        type="image/png"
+        srcset="
+          ./images/optimized/banner.png    1x,
+          ./images/optimized/banner@2x.png 2x
+        "
+      />
+      <img class="hero__img" src="./images/optimized/banner.png" alt="" />
+    </picture>
   </div>
 </section>
