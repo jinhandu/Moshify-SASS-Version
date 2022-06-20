@@ -204,6 +204,10 @@ a {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
+.btn .icon {
+  vertical-align: middle;
+}
+
 .btn--accent {
   background-color: #ff3400;
   color: white;
@@ -290,11 +294,14 @@ a {
 }
 
 .input-group {
+  max-width: 760px;
   border: 0;
   -webkit-box-shadow: 0 0 30px 20px #e6ebee;
           box-shadow: 0 0 30px 20px #e6ebee;
   border-radius: 30px;
   padding-left: 0rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
   display: -webkit-box;
@@ -303,6 +310,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 760px) {
+  .input-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .input-group .icon-container {
@@ -312,6 +327,7 @@ a {
 
 .input-group .input {
   padding-left: 1rem;
+  width: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -326,9 +342,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-  margin-right: 0.1rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  margin-right: 0.4rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 
 .input-group .btn .icon {
@@ -884,5 +905,47 @@ a {
         align-self: center;
     text-align: left;
   }
+}
+
+.block-domain__heading {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.block-domain__tagline {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.block-domain__price {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (60px)[3];
+      grid-template-rows: repeat(3, 60px);
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__price {
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+
+.block-domain__price li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2rem;
+  margin-top: 0;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
