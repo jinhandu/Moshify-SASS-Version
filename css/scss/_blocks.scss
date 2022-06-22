@@ -2,6 +2,8 @@
   --padding--vertical: 6rem;
   padding-top: 6rem;
   padding-bottom: var(--padding--vertical);
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .block--dark {
   color: #7b858b;
@@ -15,5 +17,6 @@
   clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
 }
 .block--stretched-right {
+  padding-bottom: calc(var(--padding--vertical) + 6rem);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 80%);
 }

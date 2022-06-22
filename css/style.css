@@ -377,8 +377,8 @@ a {
 }
 
 .card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .card--primary .card__header {
@@ -423,6 +423,13 @@ a {
 .plan__billing-cycle {
   font-size: 2rem;
   opacity: 0.8;
+}
+
+.plan__btn {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .plan .badge--secondary {
@@ -829,6 +836,8 @@ a {
   --padding--vertical: 6rem;
   padding-top: 6rem;
   padding-bottom: var(--padding--vertical);
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .block--dark {
@@ -847,6 +856,7 @@ a {
 }
 
 .block--stretched-right {
+  padding-bottom: calc(var(--padding--vertical) + 6rem);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 80%);
           clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 80%);
 }
@@ -947,5 +957,21 @@ a {
   font-size: 2rem;
   margin-top: 0;
   font-weight: bold;
+}
+
+.block-plan .grid {
+  gap: 4rem;
+}
+
+.block-plan .card {
+  max-width: 450px;
+  margin: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-plan .plan--big {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

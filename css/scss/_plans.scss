@@ -26,6 +26,12 @@
   font-size: 2rem;
   opacity: 0.8;
 }
+.plan__btn {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .plan {
   .badge--secondary {
     background-color: darken($color: $colorSecondary, $amount: 2);

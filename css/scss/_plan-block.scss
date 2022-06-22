@@ -1,0 +1,15 @@
+.block-plan {
+  .grid {
+    gap: 4rem;
+  }
+  .card {
+    max-width: 450px;
+    margin: auto;
+  }
+
+  .plan--big {
+    @media screen and (min-width: $mediaBreakPointLarge) {
+      transform: scale(1.1);
+    }
+  }
+}
