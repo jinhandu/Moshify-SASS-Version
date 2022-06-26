@@ -1,0 +1,26 @@
+.feature {
+  column-gap: 10rem;
+  margin-bottom: 5rem;
+}
+.feature__heading {
+  font-size: 2.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  @include tablet-and-desktop {
+    font-size: 2.4rem;
+  }
+}
+.feature__description {
+  font-size: 2rem;
+  @include tablet-and-desktop {
+    font-size: 1.8rem;
+  }
+}
+.feature__figure {
+  width: 90%;
+}
+@include tablet-and-desktop {
+  .feature:nth-of-type(even) .feature__description-container {
+    order: 2;
+  }
+}
