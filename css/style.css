@@ -846,6 +846,15 @@ a {
   color: white;
 }
 
+.block__heading {
+  text-align: center;
+}
+
+.block__tagline {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
 .block--stretched-left {
   padding-bottom: calc(var(--padding--vertical) + 6rem);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
