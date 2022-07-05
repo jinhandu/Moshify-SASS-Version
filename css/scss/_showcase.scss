@@ -1,0 +1,22 @@
+.grid--1x2.showcase__grid {
+  @include tablet-and-desktop {
+    grid-template-columns: 50% 50%;
+  }
+}
+.showcase__heading {
+  margin-bottom: 3rem;
+}
+.showcase__img {
+  width: 100%;
+  @include tablet-and-desktop {
+    width: 700px;
+    position: absolute;
+    right: 0px;
+  }
+}
+.showcase__img-container {
+  width: 100%;
+  @include tablet-and-desktop {
+    position: relative;
+  }
+}

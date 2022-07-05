@@ -4,7 +4,6 @@
 
 @include tablet-and-desktop {
   .grid--1x2 {
-    //for PC
     grid-template-columns: repeat(2, 1fr);
   }
   .grid--1x3 {

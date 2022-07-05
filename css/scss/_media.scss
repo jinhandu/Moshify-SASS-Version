@@ -2,16 +2,23 @@
   display: flex;
 }
 .media__image {
-  padding: 2rem;
+  margin: 1.5rem;
 }
 .media__title {
-  //   color: #fff;
+  color: #fff;
   margin-top: 0;
   font-size: 3rem;
   font-weight: bold;
+  @include tablet-and-desktop {
+    font-size: 2.5rem;
+  }
 }
 .media__description {
-  margin-top: 1rem;
-  //   color: #7b858b;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  color: #7b858b;
   font-size: 2rem;
+  @include tablet-and-desktop {
+    font-size: 1.8rem;
+  }
 }
