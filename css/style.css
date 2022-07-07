@@ -668,10 +668,13 @@ a {
 }
 
 .collapsible__heading {
-  font-size: 3rem;
+  font-size: 2.6rem;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
 }
 
 .collapsible__icon {
+  margin-top: 1.5rem;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   -webkit-transition: -webkit-transform 0.3s;
@@ -681,7 +684,9 @@ a {
 }
 
 .collapsible__content {
+  margin-left: 2rem;
   max-height: 0;
+  margin-bottom: 3rem;
   opacity: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.3s, opacity 0.3s;
@@ -858,6 +863,15 @@ a {
 }
 
 .block--dark .block__heading {
+  color: white;
+}
+
+.block--gray {
+  color: #777777;
+  background-color: #232323;
+}
+
+.block--gray .block__heading {
   color: white;
 }
 
@@ -1075,6 +1089,69 @@ a {
 @media screen and (min-width: 768px) {
   .showcase__img-container {
     position: relative;
+  }
+}
+
+.block-footer ul {
+  list-style: none;
+}
+
+.block-footer__logo {
+  margin-top: 3rem;
+  width: 240px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-footer__logo {
+    width: 228px;
+    margin-top: 0;
+  }
+}
+
+.block-footer__tagline {
+  display: block;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block-footer__tagline {
+    max-width: 228px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-footer__collapibles {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .block-footer__collapibles .collapsible__icon {
+    display: none;
+  }
+  .block-footer__collapibles .collapsible--dark-gray {
+    border: none;
+  }
+  .block-footer__collapibles .collapsible__heading {
+    font-size: 1.8rem;
+  }
+  .block-footer__collapibles .collapsible__content {
+    font-size: 1.5rem;
+    max-height: 100vh;
+    opacity: 1;
+  }
+  .grid--1x2 {
+    -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */

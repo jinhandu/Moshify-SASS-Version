@@ -12,6 +12,13 @@
   }
   background-color: black;
 }
+.block--gray {
+  color: #777777;
+  .block__heading {
+    color: white;
+  }
+  background-color: $colorDarkGrayBg;
+}
 .block__heading {
   text-align: center;
 }

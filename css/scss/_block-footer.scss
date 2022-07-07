@@ -1,0 +1,47 @@
+.block-footer ul {
+  list-style: none;
+}
+.block-footer__logo {
+  margin-top: 3rem;
+  width: 240px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  @include tablet-and-desktop {
+    width: 228px;
+    margin-top: 0;
+  }
+}
+.block-footer__tagline {
+  display: block;
+  text-align: center;
+  font-size: 2.2rem;
+  @include tablet-and-desktop {
+    max-width: 228px;
+    font-size: 1.5rem;
+  }
+}
+@include tablet-and-desktop {
+  .block-footer__collapibles {
+    order: 1;
+    display: flex;
+    justify-content: space-around;
+    .collapsible__icon {
+      display: none;
+    }
+    .collapsible--dark-gray {
+      border: none;
+    }
+    .collapsible__heading {
+      font-size: 1.8rem;
+    }
+    .collapsible__content {
+      font-size: 1.5rem;
+      max-height: 100vh;
+      opacity: 1;
+    }
+  }
+  .grid--1x2 {
+    grid-template-columns: auto 1fr;
+  }
+}
