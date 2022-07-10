@@ -14,9 +14,8 @@
   transition: transform 0.3s;
 }
 .collapsible__content {
-  margin-left: 2rem;
   max-height: 0;
-  margin-bottom: 3rem;
+
   opacity: 0;
   overflow: hidden;
   transition: max-height 0.3s, opacity 0.3s;

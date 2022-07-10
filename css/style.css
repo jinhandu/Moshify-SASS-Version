@@ -326,7 +326,7 @@ a {
 }
 
 .input-group .input {
-  padding-left: 1rem;
+  padding-left: 2rem;
   width: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -684,9 +684,7 @@ a {
 }
 
 .collapsible__content {
-  margin-left: 2rem;
   max-height: 0;
-  margin-bottom: 3rem;
   opacity: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.3s, opacity 0.3s;
@@ -745,8 +743,18 @@ a {
 
 @media screen and (min-width: 768px) {
   .nav .collapsible__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-height: 100vh;
     opacity: 1;
+    margin-right: 3rem;
   }
 }
 
@@ -914,14 +922,14 @@ a {
 }
 
 .hero__heading {
-  font-size: 6rem;
+  font-size: 8rem;
   color: #fff;
   line-height: 1;
 }
 
 @media screen and (min-width: 768px) {
   .hero__heading {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 
@@ -1092,6 +1100,11 @@ a {
   }
 }
 
+.block-footer .collapsible__content {
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
 .block-footer ul {
   list-style: none;
 }
@@ -1125,7 +1138,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .block-footer__collapibles {
+  .block-footer .block-footer__collapibles {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1135,21 +1148,21 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .block-footer__collapibles .collapsible__icon {
+  .block-footer .block-footer__collapibles .collapsible__icon {
     display: none;
   }
-  .block-footer__collapibles .collapsible--dark-gray {
+  .block-footer .block-footer__collapibles .collapsible--dark-gray {
     border: none;
   }
-  .block-footer__collapibles .collapsible__heading {
+  .block-footer .block-footer__collapibles .collapsible__heading {
     font-size: 1.8rem;
   }
-  .block-footer__collapibles .collapsible__content {
+  .block-footer .block-footer__collapibles .collapsible__content {
     font-size: 1.5rem;
     max-height: 100vh;
     opacity: 1;
   }
-  .grid--1x2 {
+  .block-footer .grid--1x2 {
     -ms-grid-columns: auto 1fr;
         grid-template-columns: auto 1fr;
   }

@@ -4,11 +4,15 @@
   justify-content: space-between;
 
   .collapsible__content {
-    @media screen and (min-width: $mediaBreakPoiontMedium) {
+    @include tablet-and-desktop {
       //On PC
       //Make sure the menu items are always visible when it on PC.
+      display: flex;
+      align-items: center;
+      justify-content: center;
       max-height: 100vh;
       opacity: 1;
+      margin-right: 3rem;
     }
   }
 }
